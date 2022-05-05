@@ -26,56 +26,56 @@ import uniqid from "uniqid";
 function Gameboard() {
 
     const cardDeck = [
-        // {
-        //     id: uniqid(),
-        //     image: battletoads,
-        //     name: "Battletoads"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: castlevania,
-        //     name: "Castlevania"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: castlevania2,
-        //     name: "Castlevania II"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: castlevania3,
-        //     name: "Castlevania III"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: contra,
-        //     name: "Contra"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: ducktales,
-        //     name: "Ducktales"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: finalfantasy,
-        //     name: "Final Fantasy"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: kidicarus,
-        //     name: "Kid Icarus"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: kirby,
-        //     name: "Kirby's Adventure"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: mario,
-        //     name: "Super Mario Bros."
-        //   },
+        {
+            id: uniqid(),
+            image: battletoads,
+            name: "Battletoads"
+        },
+        {
+            id: uniqid(),
+            image: castlevania,
+            name: "Castlevania"
+        },
+        {
+            id: uniqid(),
+            image: castlevania2,
+            name: "Castlevania II"
+        },
+        {
+            id: uniqid(),
+            image: castlevania3,
+            name: "Castlevania III"
+        },
+        {
+            id: uniqid(),
+            image: contra,
+            name: "Contra"
+        },
+        {
+            id: uniqid(),
+            image: ducktales,
+            name: "Ducktales"
+        },
+        {
+            id: uniqid(),
+            image: finalfantasy,
+            name: "Final Fantasy"
+        },
+        {
+            id: uniqid(),
+            image: kidicarus,
+            name: "Kid Icarus"
+        },
+        {
+            id: uniqid(),
+            image: kirby,
+            name: "Kirby's Adventure"
+        },
+        {
+            id: uniqid(),
+            image: mario,
+            name: "Super Mario Bros."
+          },
           {
             id: uniqid(),
             image: mario2,
@@ -101,31 +101,31 @@ function Gameboard() {
             image: ninjagaiden,
             name: "Ninja Gaiden"
         },
-        // {
-        //     id: uniqid(),
-        //     image: punchout,
-        //     name: "Mike Tyson's Punch-Out"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: rygar,
-        //     name: "Rygar"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: turtles,
-        //     name: "Teenage Mutant Ninja Turtles: The Arcade Game"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: zelda,
-        //     name: "The Legend of Zelda"
-        // },
-        // {
-        //     id: uniqid(),
-        //     image: zelda2,
-        //     name: "Zelda II: The Adventure of Link"
-        // },
+        {
+            id: uniqid(),
+            image: punchout,
+            name: "Mike Tyson's Punch-Out"
+        },
+        {
+            id: uniqid(),
+            image: rygar,
+            name: "Rygar"
+        },
+        {
+            id: uniqid(),
+            image: turtles,
+            name: "Teenage Mutant Ninja Turtles: The Arcade Game"
+        },
+        {
+            id: uniqid(),
+            image: zelda,
+            name: "The Legend of Zelda"
+        },
+        {
+            id: uniqid(),
+            image: zelda2,
+            name: "Zelda II: The Adventure of Link"
+        },
     ]
 
 console.log(cardDeck.picture)
