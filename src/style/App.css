@@ -1,0 +1,21 @@
+@font-face {
+
+  font-family: 'nesFont';
+  src: url('./nintendo-nes-font.ttf') format('woff');
+  font-weight: 600;  
+  font-style: normal;
+}   
+
+.App{
+
+  min-width: 90%;
+  width: fit-content;
+  min-height: 98vh;
+  height: fit-content;
+  border-style: solid;
+  border-width: thin;
+  box-shadow: 5px 5px 5px 5px #888888;
+  margin: 10px auto auto auto;
+  font-family: 'nesFont';
+}
+

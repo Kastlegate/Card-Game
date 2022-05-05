@@ -1,0 +1,25 @@
+#Header{
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+}
+#banner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 5px solid #fe0016;
+    margin-bottom: 15px;
+}
+#titleText{
+    margin: auto;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: #fe0016;
+}
+#bannerImage{
+    width: 200px;
+    height: 110px;
+    margin-left: 10px;
+}
