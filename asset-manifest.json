@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Card-Game/static/css/main.228637a1.css",
+    "main.js": "/Card-Game/static/js/main.8b966087.js",
+    "static/js/787.51d4feb6.chunk.js": "/Card-Game/static/js/787.51d4feb6.chunk.js",
+    "static/media/ninjagaiden.jpg": "/Card-Game/static/media/ninjagaiden.631338f4e699136d7615.jpg",
+    "static/media/turtles.jpg": "/Card-Game/static/media/turtles.e31d07a02126894e3353.jpg",
+    "static/media/punchout.jpg": "/Card-Game/static/media/punchout.7a727e424117db572916.jpg",
+    "static/media/kirby.jpg": "/Card-Game/static/media/kirby.9b0c9f859a7b9d1210b0.jpg",
+    "static/media/ducktales.jpg": "/Card-Game/static/media/ducktales.ea9b1c3f01fbb46c94f8.jpg",
+    "static/media/castlevania1.png": "/Card-Game/static/media/castlevania1.08a95102ea0c5df0e402.png",
+    "static/media/megaman2.jpg": "/Card-Game/static/media/megaman2.3cb469d60000b1c2f401.jpg",
+    "static/media/castlevania3.jpg": "/Card-Game/static/media/castlevania3.5861c8b176eb9aca58ea.jpg",
+    "static/media/mario2.jpg": "/Card-Game/static/media/mario2.bd05cd3331bb17df0bbe.jpg",
+    "static/media/castlevania2.jpg": "/Card-Game/static/media/castlevania2.86a46a9724b3b6868abc.jpg",
+    "static/media/battletoads.jpg": "/Card-Game/static/media/battletoads.2c0eb29cb0702106e0b3.jpg",
+    "static/media/finalfantasy.jpg": "/Card-Game/static/media/finalfantasy.a2542030732748712df4.jpg",
+    "static/media/contra.jpg": "/Card-Game/static/media/contra.8e1d5d0cfd4a9904a149.jpg",
+    "static/media/mario3.jpg": "/Card-Game/static/media/mario3.e3395f2143cfda023a52.jpg",
+    "static/media/zelda2.jpg": "/Card-Game/static/media/zelda2.23500acaea5f653103df.jpg",
+    "static/media/rygar.jpg": "/Card-Game/static/media/rygar.f692bef07cd8a7c8195e.jpg",
+    "static/media/metroid.jpg": "/Card-Game/static/media/metroid.a0cc0d183f035e72e2c5.jpg",
+    "static/media/zelda.jpg": "/Card-Game/static/media/zelda.7a26c3141cfc97f42a0e.jpg",
+    "static/media/kidicarus.jpg": "/Card-Game/static/media/kidicarus.a071f4d3321994f14149.jpg",
+    "static/media/mario1.jpg": "/Card-Game/static/media/mario1.ac620be6c60dc9106ac4.jpg",
+    "static/media/nes.jpg": "/Card-Game/static/media/nes.78a879a611b04711f524.jpg",
+    "static/media/nintendo-nes-font.ttf": "/Card-Game/static/media/nintendo-nes-font.9c5d086b4dfa456d55da.ttf",
+    "index.html": "/Card-Game/index.html",
+    "main.228637a1.css.map": "/Card-Game/static/css/main.228637a1.css.map",
+    "main.8b966087.js.map": "/Card-Game/static/js/main.8b966087.js.map",
+    "787.51d4feb6.chunk.js.map": "/Card-Game/static/js/787.51d4feb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.228637a1.css",
+    "static/js/main.8b966087.js"
+  ]
+}
