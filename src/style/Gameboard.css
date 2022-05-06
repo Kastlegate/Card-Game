@@ -4,7 +4,4 @@
     display: grid;
     grid-template-columns: 220px 220px 220px 220px 220px;
     margin: auto;
-    /* border-style: solid;
-    border-width: thin;
-    box-shadow: 5px 5px 5px 5px #888888; */
 }

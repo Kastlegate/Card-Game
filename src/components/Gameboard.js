@@ -25,7 +25,7 @@ import uniqid from "uniqid";
 
 function Gameboard() {
 
-    const cardDeck = [
+    const cards = [
         {
             id: uniqid(),
             image: battletoads,
@@ -101,39 +101,46 @@ function Gameboard() {
             image: ninjagaiden,
             name: "Ninja Gaiden"
         },
-        {
-            id: uniqid(),
-            image: punchout,
-            name: "Mike Tyson's Punch-Out"
-        },
-        {
-            id: uniqid(),
-            image: rygar,
-            name: "Rygar"
-        },
-        {
-            id: uniqid(),
-            image: turtles,
-            name: "Teenage Mutant Ninja Turtles: The Arcade Game"
-        },
-        {
-            id: uniqid(),
-            image: zelda,
-            name: "The Legend of Zelda"
-        },
-        {
-            id: uniqid(),
-            image: zelda2,
-            name: "Zelda II: The Adventure of Link"
-        },
+    //     // {
+    //     //     id: uniqid(),
+    //     //     image: punchout,
+    //     //     name: "Mike Tyson's Punch-Out"
+    //     // },
+    //     // {
+    //     //     id: uniqid(),
+    //     //     image: rygar,
+    //     //     name: "Rygar"
+    //     // },
+    //     // {
+    //     //     id: uniqid(),
+    //     //     image: turtles,
+    //     //     name: "Teenage Mutant Ninja Turtles: The Arcade Game"
+    //     // },
+    //     // {
+    //     //     id: uniqid(),
+    //     //     image: zelda,
+    //     //     name: "The Legend of Zelda"
+    //     // },
+    //     // {
+    //     //     id: uniqid(),
+    //     //     image: zelda2,
+    //     //     name: "Zelda II: The Adventure of Link"
+    //     // },
     ]
+    const [cardDeck, setCardDeck] = useState(cards)
 
-console.log(cardDeck.picture)
+    const cardClicked = (name) =>{
+        // alert(name)
+        setCardDeck(prevValue => [...prevValue].sort(() => Math.random() - 0.5));
+    };
+
   return (
     <div id="gameboard">
         
         {cardDeck.map((card) => {
-                      return <Card key={card.id} src={card.image} name={card.name}/>;
+                      return <div onClick={() => {cardClicked(card.name)}} key={card.id} >
+                          <Card src={card.image} name={card.name} />
+                          </div>;
                     })}
 
     </div>
