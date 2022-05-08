@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Card-Game/static/css/main.228637a1.css",
-    "main.js": "/Card-Game/static/js/main.02cee40f.js",
+    "main.js": "/Card-Game/static/js/main.5c8e3831.js",
     "static/js/787.51d4feb6.chunk.js": "/Card-Game/static/js/787.51d4feb6.chunk.js",
     "static/media/ninjagaiden.jpg": "/Card-Game/static/media/ninjagaiden.631338f4e699136d7615.jpg",
     "static/media/turtles.jpg": "/Card-Game/static/media/turtles.e31d07a02126894e3353.jpg",
@@ -27,11 +27,11 @@
     "static/media/nintendo-nes-font.ttf": "/Card-Game/static/media/nintendo-nes-font.9c5d086b4dfa456d55da.ttf",
     "index.html": "/Card-Game/index.html",
     "main.228637a1.css.map": "/Card-Game/static/css/main.228637a1.css.map",
-    "main.02cee40f.js.map": "/Card-Game/static/js/main.02cee40f.js.map",
+    "main.5c8e3831.js.map": "/Card-Game/static/js/main.5c8e3831.js.map",
     "787.51d4feb6.chunk.js.map": "/Card-Game/static/js/787.51d4feb6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.228637a1.css",
-    "static/js/main.02cee40f.js"
+    "static/js/main.5c8e3831.js"
   ]
 }
