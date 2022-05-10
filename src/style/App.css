@@ -1,7 +1,7 @@
 @font-face {
 
   font-family: 'nesFont';
-  src: url('./nintendo-nes-font.ttf') format('woff');
+  src: url('./PressStart2P-vaV7.ttf') format('woff');
   font-weight: 600;  
   font-style: normal;
 }   
@@ -17,6 +17,6 @@
   box-shadow: 5px 5px 5px 5px #888888;
   margin: 10px auto auto auto;
   font-family: 'nesFont';
-  /* background-color: #8a8988; */
+  background-color: #dbdbdb;
 }
 

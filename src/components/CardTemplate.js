@@ -1,6 +1,6 @@
 import '../style/Card.css';
 
-const Card = (props) => {
+const CardTemplate = (props) => {
 
     return(
         <div className="card">
@@ -10,4 +10,4 @@ const Card = (props) => {
 };
 
 
-export default Card;
+export default CardTemplate;

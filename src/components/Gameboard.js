@@ -1,145 +1,44 @@
 import '../style/Gameboard.css';
-import React, {useState} from "react";
-import Card from './Card.js';
-import battletoads from '../imgs/battletoads.jpg'
-import castlevania from '../imgs/castlevania1.png'
-import castlevania2 from '../imgs/castlevania2.jpg'
-import castlevania3 from '../imgs/castlevania3.jpg'
-import contra from '../imgs/contra.jpg'
-import ducktales from '../imgs/ducktales.jpg'
-import finalfantasy from '../imgs/finalfantasy.jpg'
-import kidicarus from '../imgs/kidicarus.jpg'
-import kirby from '../imgs/kirby.jpg'
-import mario from '../imgs/mario1.jpg'
-import mario2 from '../imgs/mario2.jpg'
-import mario3 from '../imgs/mario3.jpg'
-import megaman2 from '../imgs/megaman2.jpg'
-import metroid from '../imgs/metroid.jpg'
-import ninjagaiden from '../imgs/ninjagaiden.jpg'
-import punchout from '../imgs/punchout.jpg'
-import rygar from '../imgs/rygar.jpg'
-import turtles from '../imgs/turtles.jpg'
-import zelda from '../imgs/zelda.jpg'
-import zelda2 from '../imgs/zelda2.jpg'
-import uniqid from "uniqid";
+import React, {useEffect, useState} from "react";
+import CardTemplate from './CardTemplate.js';
+import cards from './cardDeck.js'
 
-function Gameboard() {
 
-    const cards = [
-        {
-            id: uniqid(),
-            image: battletoads,
-            name: "Battletoads"
-        },
-        {
-            id: uniqid(),
-            image: castlevania,
-            name: "Castlevania"
-        },
-        {
-            id: uniqid(),
-            image: castlevania2,
-            name: "Castlevania II"
-        },
-        {
-            id: uniqid(),
-            image: castlevania3,
-            name: "Castlevania III"
-        },
-        {
-            id: uniqid(),
-            image: contra,
-            name: "Contra"
-        },
-        {
-            id: uniqid(),
-            image: ducktales,
-            name: "Ducktales"
-        },
-        {
-            id: uniqid(),
-            image: finalfantasy,
-            name: "Final Fantasy"
-        },
-        {
-            id: uniqid(),
-            image: kidicarus,
-            name: "Kid Icarus"
-        },
-        {
-            id: uniqid(),
-            image: kirby,
-            name: "Kirby's Adventure"
-        },
-        {
-            id: uniqid(),
-            image: mario,
-            name: "Super Mario Bros."
-          },
-          {
-            id: uniqid(),
-            image: mario2,
-            name: "Super Mario Bros. 2"
-        },
-        {
-            id: uniqid(),
-            image: mario3,
-            name: "Super Mario Bros. 3"
-        },
-        {
-            id: uniqid(),
-            image: megaman2,
-            name: "Mega Man 2"
-        },
-        {
-            id: uniqid(),
-            image: metroid,
-            name: "Metroid"
-        },
-        {
-            id: uniqid(),
-            image: ninjagaiden,
-            name: "Ninja Gaiden"
-        },
-    //     // {
-    //     //     id: uniqid(),
-    //     //     image: punchout,
-    //     //     name: "Mike Tyson's Punch-Out"
-    //     // },
-    //     // {
-    //     //     id: uniqid(),
-    //     //     image: rygar,
-    //     //     name: "Rygar"
-    //     // },
-    //     // {
-    //     //     id: uniqid(),
-    //     //     image: turtles,
-    //     //     name: "Teenage Mutant Ninja Turtles: The Arcade Game"
-    //     // },
-    //     // {
-    //     //     id: uniqid(),
-    //     //     image: zelda,
-    //     //     name: "The Legend of Zelda"
-    //     // },
-    //     // {
-    //     //     id: uniqid(),
-    //     //     image: zelda2,
-    //     //     name: "Zelda II: The Adventure of Link"
-    //     // },
-    ]
+function Gameboard(props) {
+    // creating a variable for the card deck in state
     const [cardDeck, setCardDeck] = useState(cards)
+    const [clicked, setClicked] = useState(false)
 
-    const cardClicked = (name) =>{
-        // alert(name)
+    const incrementScore = () => {
+        props.incrementScore()
+    }
+
+
+
+    //function to handle when a card is clicked
+    const handleCardClicked = (id, name, clicked) =>{ 
+        // searches through the cardDeck array, using the unique id of the card that was clicked, to find the card's index in the array     
+        let i = cardDeck.findIndex(x => x.id===id);
+        // uses the index to see if the card has already been clicked
+        if(cardDeck[i].clicked === true){
+            setClicked(cardDeck.forEach( element => {element.clicked=false})) 
+            setCardDeck(prevValue => [...cards])
+            return props.gameOver()
+        };
+        
+        incrementScore()
+        //changes the value of clicked to true
+        setClicked(cardDeck[i].clicked=true)        
+        // uses sort to shuffle the array of cards       
         setCardDeck(prevValue => [...prevValue].sort(() => Math.random() - 0.5));
     };
 
   return (
     <div id="gameboard">
-        
+        {/* maps the card daeck array and gives props to the CardTemplate component to render */}
         {cardDeck.map((card) => {
-                      return <div onClick={() => {cardClicked(card.name)}} key={card.id} >
-                          <Card src={card.image} name={card.name} />
+                      return <div onClick={() => {handleCardClicked(card.id, card.name, card.clicked)}} key={card.id} >
+                          <CardTemplate src={card.image} name={card.name} />
                           </div>;
                     })}
 

@@ -4,7 +4,7 @@
     margin: auto;
 }
 #banner{
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -23,3 +23,18 @@
     height: 110px;
     margin-left: 10px;
 }
+
+#score{
+margin: auto;
+}
+
+#currentScore{
+    padding-bottom: 2px;
+    border-bottom: 1px solid ;
+}
+
+.scoreClass{
+    font-size: 13px;
+    padding-top: 4px;
+}
+
