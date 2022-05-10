@@ -19,3 +19,7 @@
     height: fit-content;
     
 }
+
+.animate{
+    transform: rotateY(180deg);
+}
