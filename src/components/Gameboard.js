@@ -23,7 +23,7 @@ function Gameboard(props) {
         if(cardDeck[i].clicked === true){
             setClicked(cardDeck.forEach( element => {element.clicked=false})) 
             setCardDeck(prevValue => [...cards])
-            return props.gameOver()
+            return props.toggleGameOver(true);
         };
         
         incrementScore()

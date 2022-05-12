@@ -4,4 +4,5 @@
     display: grid;
     grid-template-columns: 220px 220px 220px 220px 220px;
     margin: auto;
+    z-index: -1;
 }
