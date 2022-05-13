@@ -8,7 +8,7 @@ function App() {
 
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
-  const [gameOverShow, setGameOverShow] = useState(false)
+  const [toggleGameOver, setToggleGameOverShow] = useState(false)
 
   const incrementScore = () => {
     setScore(score + 1);
@@ -19,15 +19,15 @@ function App() {
        setHighScore(score)
     }
     setScore(0)
-    setGameOverShow(false)
+    toggleGameOver(false)
   }
 
   console.log("App score: " + score)
   return (
     <div className="App">
       <Header score={score} highScore={highScore} />
-      { gameOverShow ? <GameOverPrompt score={score} highScore={highScore} gameOver={gameOver} /> :null}
-      { !gameOverShow ? <Gameboard incrementScore={incrementScore} toggleGameOver={setGameOverShow} /> :null}
+      { toggleGameOver ? <GameOverPrompt score={score} highScore={highScore} gameOver={gameOver} /> :null}
+      { !toggleGameOver ? <Gameboard incrementScore={incrementScore} toggleGameOver={setToggleGameOverShow} /> :null}
     </div>
   );
 }
